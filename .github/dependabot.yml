@@ -1,0 +1,25 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    ignore:
+      - dependency-name: "next"
+        versions: ["14.0.3"]
+      - dependency-name: "openai"
+        versions: ["^4.20.0"]
+      - dependency-name: "react"
+        versions: ["^18"]
+      - dependency-name: "react-dom"
+        versions: ["^18"]
+      - dependency-name: "autoprefixer"
+        versions: ["^10.0.1"]
+      - dependency-name: "eslint"
+        versions: ["^8"]
+      - dependency-name: "eslint-config-next"
+        versions: ["14.0.3"]
+      - dependency-name: "postcss"
+        versions: ["^8"]
+      - dependency-name: "tailwindcss"
+        versions: ["^3.3.0"]
